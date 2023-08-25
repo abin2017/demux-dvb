@@ -1,7 +1,7 @@
 CC = gcc
-CFLAGS = -g -O0 -Wall -Wextra
+CFLAGS = -g -O0 -Wall -Wextra -m32
 
-SRCS = demux.c main.c
+SRCS = demux.c rl_util.c rl_dmx.c ota.c main.c
 OBJS = $(SRCS:.c=.o)
 TARGET = executable
 

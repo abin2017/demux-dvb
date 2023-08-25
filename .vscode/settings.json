@@ -1,0 +1,14 @@
+{
+    "files.associations": {
+        "string.h": "c",
+        "stdbool.h": "c",
+        "stdlib.h": "c",
+        "stdio.h": "c",
+        "ota.h": "c",
+        "rl_dmx.h": "c",
+        "rl_head.h": "c",
+        "rl_util.h": "c",
+        "time.h": "c",
+        "demux.h": "c"
+    }
+}

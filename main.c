@@ -6,8 +6,10 @@
 
 #include "demux.h"
 
+int g_rlota_search_test(short pid);
 
 int main(int argc, char **argv){
+	#if 0
 	MpegTSFilter_t filter;
 	void * h = NULL;
 	char buffer[1024];
@@ -26,6 +28,10 @@ int main(int argc, char **argv){
 	ret = dmx_process_filter(h, &filter);
 
 	dmx_deinit_handle(h);
+	#endif
+
+	g_rlota_search_test(120);
+
 	return 0;
 }
 
