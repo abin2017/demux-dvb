@@ -17,8 +17,9 @@ int main(int argc, char **argv){
 
 	memset(&filter, 0, sizeof(MpegTSFilter_t));
 	filter.PID = 0x32;
-	filter.Code[0] = (0x82 & 0xF0);
-	filter.Mask[0] = 0xF0;
+	//filter.Code[0] = (0x82 & 0xF0);
+	filter.Code[0] = 0x82;
+	filter.Mask[0] = 0xFF;
 	filter.pBuf = buffer;
 	filter.BufLen = 1024;
 
@@ -27,3 +28,6 @@ int main(int argc, char **argv){
 	dmx_deinit_handle(h);
 	return 0;
 }
+
+
+
